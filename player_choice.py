@@ -20,4 +20,5 @@ def get_player_choice(board):
     elif i == 9:
         board[4][4] = "X"
 
+
     return board
