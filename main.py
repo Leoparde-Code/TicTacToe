@@ -11,7 +11,7 @@ def main(board, current_player, winner, counter):
 
 
     while winner == "" and counter <= 9:
-        board = get_player_choice(board, current_player)
+        board, current_player = get_player_choice(board, current_player)
         print_board(board)
         current_player = switch_players(current_player)
         winner = check_for_winner(board)
